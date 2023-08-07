@@ -1,9 +1,11 @@
 package com.nordryd.fullstacktutorialapi.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.nordryd.fullstacktutorialapi.entities.Movie;
 import com.nordryd.fullstacktutorialapi.repository.MovieRepository;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,5 +25,9 @@ public class MovieService
     // Gets all Movies from the repository
     public List<Movie> getAllMovies() {
         return movieRepository.findAll();
+    }
+
+    public Optional<Movie> getMovieById(final String imdbId) {
+        return movieRepository.findMovieByImdbId(imdbId);
     }
 }

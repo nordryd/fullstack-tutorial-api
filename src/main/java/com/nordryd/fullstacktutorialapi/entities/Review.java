@@ -18,4 +18,8 @@ public class Review
     @Id
     private ObjectId id;
     private String content;
+
+    public Review(final String content) {
+        this.content = content;
+    }
 }
