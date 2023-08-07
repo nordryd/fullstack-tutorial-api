@@ -1,2 +1,1 @@
-# fullstack-tutorial-api
-API repo for the fullstack application tutorial.
+### API for the tutorial I'm following on full stack development with spring and react.
