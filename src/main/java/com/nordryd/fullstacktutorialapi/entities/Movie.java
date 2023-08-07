@@ -2,7 +2,6 @@ package com.nordryd.fullstacktutorialapi.entities;
 
 import java.util.List;
 
-import com.nordryd.fullstacktutorialapi.entities.Review;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
